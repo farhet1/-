@@ -56,7 +56,7 @@ classDiagram
     User --> Challenge
     User --> Badge
 ```
-```mermaid graph TD;
+```graph TD;
     A[Пользователь открывает EcoTracker] --> B[Вводит данные о перемещениях]
     B --> C[Вводит данные о потреблении энергии]
     C --> D[Вводит данные о рационе питания]
