@@ -17,11 +17,43 @@
 
 
 ```mermaid
-    title:ecotracker
-    classDiagram
-    class ecotracker
-    ecotracker: +check the carbon
-    ecotracker: +energy
-    ecotracker: +nutrition
+classDiagram
+    class User {
+      +String name
+      +String email
+      +createProfile()
+      +trackCarbonFootprint()
+      +shareAchievements()
+    }
+
+    class CarbonFootprint {
+      +double transportation
+      +double energyConsumption
+      +double diet
+      +calculateFootprint()
+    }
+
+    class EcoAdvice {
+      +String tip
+      +giveAdvice()
+    }
+
+    class Challenge {
+      +String name
+      +String description
+      +startChallenge()
+      +compareResults()
+    }
+
+    class Badge {
+      +String name
+      +String description
+      +awardBadge()
+    }
+
+    User --> CarbonFootprint
+    User --> EcoAdvice
+    User --> Challenge
+    User --> Badge
 ```
 
